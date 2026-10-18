@@ -1,5 +1,3 @@
-from textnode import TextNode, TextType
-
 class HTMLNode():
 
     def __init__(self, tag: str=None, value: str=None, children=None, props=None):
@@ -20,4 +18,5 @@ class HTMLNode():
         return html
 
     def __repr__(self):
-        print(self.tag, self.value, self.children, self.props)
+        return f"HTMLNode(tag={self.tag}, value={self.value}, children={self.children}, props={self.props})"
+    
